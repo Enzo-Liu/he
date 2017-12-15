@@ -1,0 +1,30 @@
+name:                he
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Enzo-Liu/he#readme
+license:             BSD3
+author:              Enzo Liu
+maintainer:          liuenze6516@gmail.com
+copyright:           "Copyright: (c) 2016 Enzo Liu"
+category:            base
+extra-source-files:
+- README.md
+
+ghc-options: -W -fwarn-incomplete-patterns -fwarn-unused-do-bind -dynamic
+dependencies:
+  - base >= 4.7 && < 5
+  - binary >=0.7 && <0.9
+  - bytestring >=0.10 && <0.11
+  - containers <0.6
+  - filepath >=1.0 && <1.5
+  - hoppy-runtime
+  - qtah-qt5
+  - qtah-cpp-qt5
+
+extra-lib-dirs: []
+
+executables:
+  he:
+    source-dirs:      src
+    main:             Main.hs
